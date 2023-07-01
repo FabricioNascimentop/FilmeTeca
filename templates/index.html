@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testeee</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" href="data:,">
+
+</head>
+<body>
+    <h1 class="h1_wow"> Filmes catalogados</h1>
+    <div class="titulo"><div class="titulo">Nome</div class="titulo"><div class="titulo">Gênero</div><div class="titulo">Diretor</div></div>
+<ul>
+    {%for item in lista%}
+    <div>
+        <li class="nome">{{item.nome}}</li>
+        <li class="genero">{{item.genero}}</li>
+        <li class="diretor">{{item.diretor}}</li>
+    </div>
+    {%endfor%}
+</ul>
+    <h1 class="h1_wow"><a href="/cadastro" id="new_move">Cadastrar novo filme</a></h1>
+</body>
+</html>
