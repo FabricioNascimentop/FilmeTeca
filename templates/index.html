@@ -9,13 +9,14 @@
 </head>
 <body>
     <h1 class="h1_wow"> Filmes catalogados</h1>
-    <div class="titulo"><div class="titulo">Nome</div class="titulo"><div class="titulo">Gênero</div><div class="titulo">Diretor</div></div>
+    <div><h2>Nome</h2> <h2>Gênero</h2> <h2>Diretor</h2></div>
 <ul>
     {%for item in lista%}
-    <div>
+    <div id="div_index">
         <li class="nome">{{item.nome}}</li>
         <li class="genero">{{item.genero}}</li>
         <li class="diretor">{{item.diretor}}</li>
+        <li class="ano">{{item.ano}}</li>
     </div>
     {%endfor%}
 </ul>

@@ -43,7 +43,7 @@ input{
     background-color: white;
 }
 button{
-    margin: 10px;
+    margin-left: calc(50% - 50px);
     padding:7px;
     width: 100px;
     border: 1.7px solid rgb(100, 100, 100);
@@ -77,11 +77,28 @@ fieldset{
 }
 label{
     font-family: 'Abel', sans-serif;
-    font-size: 25px;
-    margin: 5px;
-}
+    font-size: 25px;}
 input.login{
     margin: 0px;
     width: 300px;
     margin: 5px 5px 5px 0px;
+}
+h1#h1_login{
+    padding: 15px; 
+    background-color: white;
+    width: 600px;
+    text-align: center;
+    border-radius: 5px;
+}
+div#div_login{
+    margin: 50px;
+    margin-left: calc(50% - 300px);
+    width: 600px;
+    background-color: rgba(127, 255, 212, 0.5);
+}
+div#formularo{
+    position: relative;
+    margin: auto;
+    padding: 15px;
+    border: none;
 }

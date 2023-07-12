@@ -3,17 +3,17 @@ app = Flask(__name__)
 app.secret_key = 'fabricio'
 #criação da classe "filme", modo primitivo de armazenar dados da lista
 class filme:
-    def __init__(self,nome, genero, diretor):
+    def __init__(self,nome, genero, diretor,ano):
         self.nome = nome
         self.genero = genero
         self.diretor = diretor
-
+        self.ano = ano
 #exemplos iniciais pra enriquecer visualmente a experiência de quem entra no site
-avatar = filme('avatar 2: caminho do n sei oq', 'aventura/fantasia','james cameron')
-joker = filme('joker','drama','todd philips')
-jack = filme('o estranho mundo de jack','animação','tim burton')
-ldj = filme('liga da justiça','ação','jack snider')
-estomago = filme('estomago','drama','marcos jorge')
+avatar = filme('avatar 2: caminho do n sei oq', 'aventura/fantasia','james cameron',2022)
+joker = filme('joker','drama','todd philips',2019)
+jack = filme('o estranho mundo de jack','animação','tim burton',1993)
+ldj = filme('liga da justiça','ação','jack snider',2021)
+estomago = filme('estomago','drama','marcos jorge',2007)
 lista = [avatar,joker,jack,ldj,estomago]
 
 @app.route('/inicio')
