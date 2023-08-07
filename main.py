@@ -11,7 +11,7 @@ class filme:
         self.diretor = diretor
         self.ano = ano
 #exemplos iniciais pra enriquecer visualmente a experiência de quem entra no site
-avatar = filme('avatar 2: caminho', 'aventura/fantasia','james cameron',2022)
+avatar = filme('avatar 2: caminho da água', 'aventura/fantasia','james cameron',2022)
 joker = filme('joker','drama','todd philips',2019)
 jack = filme('o estranho mundo de jack','animação','tim burton',1993)
 ldj = filme('liga da justiça','ação','jack snider',2021)

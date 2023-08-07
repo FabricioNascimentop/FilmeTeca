@@ -13,10 +13,18 @@
 <ul>
     {%for item in lista%}
     <div id="elementos_index">
-        <li class="nome">{{item.nome}}</li>
-        <li class="genero">{{item.genero}}</li>
-        <li class="diretor">{{item.diretor}}</li>
-        <li class="ano">{{item.ano}}</li>
+        <div id="cu">
+            <li class="nome">{{item.nome}}</li>
+        </div>
+        <div id="cu">
+            <li class="genero">{{item.genero}}</li>
+        </div>
+        <div id="cu">
+            <li class="diretor">{{item.diretor}}</li>
+        </div>
+        <div id="cu">
+            <li class="ano">{{item.ano}}</li>
+        </div>
     </div>
     {%endfor%}
 </ul>
