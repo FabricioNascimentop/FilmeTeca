@@ -6,17 +6,27 @@
   <link rel="stylesheet" href="../static/style.css">
   <title>Cadastro_filme</title>
 </head>
-<h1 id="novoo_filme">Inserir novo filme</h1>
+<h1 id="titulo_cadastro">Inserir novo filme</h1>
+<div id="quadro_cadastro">
 <form action="/catalogar" method="post">
-  <fieldset>
-    <input type="text" name="novo_filme" id="nome_filme" value="nome:">
-    <br>
-    <input type="text" name="genero" id="genero" value="gênero:">
-    <br>
-    <input type="text" name="diretor" id="diretor" value="diretor:">
-    <br>
-    <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
-  </fieldset>
+      <label for="filme" class="cadastro">Nome:</label>
+      <br>
+      <input type="text" name="nome_cadastro" id="filme" class="cadastro">
+      <br>
+      <label for="genero" class="cadastro">Gênero:</label>
+      <br>
+      <input type="text" name="genero_cadastro" id="genero" class="cadastro">
+      <br>
+      <label for="diretor" class="cadastro">Diretor:</label>
+      <br>
+      <input type="text" name="diretor_cadastro" id="diretor" class="cadastro">
+      <br>
+      <label for="ano" class="cadastro">Ano:</label>
+      <br>
+      <input type="text" name="ano_cadastro" id="ano" class="cadastro">
+      <br>
+      <button type="submit">Salvar</button>
+  </div>
 </form>
 
 </body>

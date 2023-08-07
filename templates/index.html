@@ -8,17 +8,18 @@
 
 </head>
 <body>
-    <h1 class="h1_wow"> Filmes catalogados</h1>
-    <div class="titulo"><div class="titulo">Nome</div class="titulo"><div class="titulo">Gênero</div><div class="titulo">Diretor</div></div>
+    <h1 id="titulo_index"> Filmes catalogados</h1>
+    <div id="quadro_titulos_index"><h2>Nome</h2><h2>Gênero</h2><h2>Diretor</h2><h2>Ano</h2></div>
 <ul>
     {%for item in lista%}
-    <div>
+    <div id="elementos_index">
         <li class="nome">{{item.nome}}</li>
         <li class="genero">{{item.genero}}</li>
         <li class="diretor">{{item.diretor}}</li>
+        <li class="ano">{{item.ano}}</li>
     </div>
     {%endfor%}
 </ul>
-    <h1 class="h1_wow"><a href="/cadastro" id="new_move">Cadastrar novo filme</a></h1>
+    <h1 id="subtitulo"><a href="/cadastro" id="new_move">Cadastrar novo filme</a></h1>
 </body>
 </html>
