@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>testeee</title>
+    <title>FilmeTeca</title>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="icon" href="data:,">
 
@@ -13,18 +13,10 @@
 <ul>
     {%for item in lista%}
     <div id="elementos_index">
-        <div id="cu">
-            <li class="nome">{{item.nome}}</li>
-        </div>
-        <div id="cu">
-            <li class="genero">{{item.genero}}</li>
-        </div>
-        <div id="cu">
-            <li class="diretor">{{item.diretor}}</li>
-        </div>
-        <div id="cu">
-            <li class="ano">{{item.ano}}</li>
-        </div>
+        <li id="nome"class="lindex"><span class="cu">{{item.nome}}</span></li>
+        <li id="genero"class="lindex"><span class="cu">{{item.genero}}</span>
+        <li id="diretor"class="lindex"><span class="cu">{{item.diretor}}</span>
+        <li id="ano" class="lindex"><span class="cu">{{item.ano}}</span>
     </div>
     {%endfor%}
 </ul>

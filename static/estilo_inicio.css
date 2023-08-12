@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Lexend+Mega:wght@400;700&family=Public+Sans&family=Ramabhadra&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #FDFD96;
+}
+h1{
+    text-align: center;
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 15px;
+}
+h2{
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    margin-bottom: 15px;
+
+
+}
+h3{
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    padding-bottom: 5px;
+    background-color: #ffffff8f;
+    width: 230px;
+    font-size: 30px;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 20px 20px #ffffff21;
+
+}
+div{
+    background-color: #9723C9;
+    width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 9px 7px 0px 0px black;
+}
+p{
+    font-size: 26px;
+    font-family: 'Public Sans', sans-serif;
+    margin: 20px;
+}
+li{
+    text-shadow: 0px 0px 20px #FDFD96;
+    font-size: 24px;
+    font-family: 'Public Sans', sans-serif;
+    margin: 10px;
+}

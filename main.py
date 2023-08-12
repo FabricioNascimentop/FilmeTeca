@@ -18,6 +18,14 @@ ldj = filme('liga da justiça','ação','jack snider',2021)
 estomago = filme('estomago','drama','marcos jorge',2007)
 lista = [avatar,joker,jack,ldj,estomago]
 
+db = SQLAlchemy(app)
+
+class Filmes(db.model):
+    nome = db.Collumn(db.string(100))
+    genero = db.Collumn(db.string(20))
+    diretor = db.Collumn(db.string(50))
+    ano = db.Collumn(db.integer(6))
+
 @app.route('/inicio')
 def inicio():
     return render_template('index.html',lista=lista)
@@ -25,7 +33,7 @@ def inicio():
 #só pra página inicial n ficar vazia, poderia ter começado com a lista porém acho feio (não me pergunte pq)
 @app.route('/')
 def sla():
-    return render_template('sla.html')
+    return render_template('inicio.html')
 
 def vel(session):
     if session == 'verdadeiro':
@@ -55,26 +63,13 @@ def catalogar():
     
     return render_template('index.html',lista=lista)
 
-@app.route('/verificar',methods=['POST',])
-def verificar():
-    senha = request.form['senha']
-    nome = request.form['nome']
-    if senha == 'senha' and nome == 'fabricio':
-        session['usuario_logado'] = nome
-        return redirect('/cadastro')
-    else:
-        return redirect('/login')
+
 
 @app.route('/cadastro')
 def cadastrar():
-    if 'usuario_logado' not in session or session['usuario_logado'] == None:
-        return redirect('/login')
-    else:
         return render_template('cadastro_filme.html')
     
-@app.route('/login')
-def paglogar():
-    return render_template('login.html')
+
 
 @app.route('/logout')
 def logout():

@@ -38,22 +38,27 @@ div#elementos_index{
     justify-content: space-around;
     list-style-type: none;
     border: none;
+}
+ul{
     background-color: #87ceeb;
 }
-li{
+li.lindex{
+    width: calc(100%/4);
     text-align: center;
     word-break: break-word;
     font-size: 25px;
     font-family: 'Ubuntu', sans-serif;
     line-height: 35px;
+    border: 2px solid black;
 }
+span.cu{
+    align-self: center;
+}
+
+
 div#quadro_ano_index{
     margin: 0px;
     padding: 0px;
-}
-div#cu{
-    align-self: center;
-    width: calc(100%/4);
 }
 a{
     font-size: 28px;
