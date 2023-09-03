@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, redirect, session
+from flask import Flask, render_template, request, session
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.secret_key = 'fabricio'
-app.config['SQLACHEMY_DATABASE_URI'] = "mysql+mysqlconnector://root:''@localhost/filmesteca"
+
+
 #criação da classe "filme", modo primitivo de armazenar dados da lista
 class filme:
     def __init__(self,nome, genero, diretor,ano):
@@ -18,13 +19,9 @@ ldj = filme('liga da justiça','ação','jack snider',2021)
 estomago = filme('estomago','drama','marcos jorge',2007)
 lista = [avatar,joker,jack,ldj,estomago]
 
-db = SQLAlchemy(app)
 
-class Filmes(db.model):
-    nome = db.Collumn(db.string(100))
-    genero = db.Collumn(db.string(20))
-    diretor = db.Collumn(db.string(50))
-    ano = db.Collumn(db.integer(6))
+
+
 
 @app.route('/inicio')
 def inicio():
@@ -64,16 +61,12 @@ def catalogar():
     return render_template('index.html',lista=lista)
 
 
-
+#meramente redireciona para cadastro_filme.html
 @app.route('/cadastro')
 def cadastrar():
         return render_template('cadastro_filme.html')
     
 
-
-@app.route('/logout')
-def logout():
-    session['usuario_logado'] = None
-    return redirect('/inicio')
-
-app.run(debug=True)
+#garante que o "app.run" só será rodado se aberta neste arquivo
+if __name__ == "__main__":
+    app.run()

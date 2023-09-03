@@ -70,15 +70,18 @@ a{
 div#quadro_cadastro{
     display: flex;
     border: 2px solid black;
-    width: 400px;
+    max-width: 400px;
     margin: auto;
     padding: 15px;
     border-radius: 5px;
     background-color: white;
     box-shadow: 16px 19px 12px 0px rgba(0, 0, 0, 0.75);
 }
+div#quadro_cadastro > form{
+    width: 400px;
+}
 div#quadro_cadastro > form > button{
-    width: 300px;
+    width: 75%;
     position: relative;
     display: block;
     border-radius: 5px;
@@ -88,7 +91,7 @@ div#quadro_cadastro > form > button{
 
 }
 input.cadastro{
-    width: 390px;
+    width: 98%;
     height: 35px;
     border-radius: 5px;
     box-shadow: 4px 4px 0px 1px black;
