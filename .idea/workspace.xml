@@ -5,14 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95ec75ee-520f-4dda-8843-52dd49c59fac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../BosTeleGpt/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/.idea/pythonProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/.vscode/Products_Exemple.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/MaisBotRestaurate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/mais bot restaurante.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/media/2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/media/new novo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/media/novo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/media/product photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BotTelegram/more restaurant bot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Estudos_Imagens/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/.idea/Flask.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pyflask/Testres/Css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Pyflask/Testres/Css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatFisica/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pyflask/.idea/Pyflask.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pyflask/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pyflask/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pyflask/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pyflask/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pyflask/Testres/Css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Utilidades/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +58,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,15 +69,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/TheBigPython/PyProjects/Flask&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/TheBigPython/PyProjects/FilmeTeca",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.main">
     <configuration name="JoojTeco" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flask" />
@@ -114,8 +144,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.testes (meu deus que saudade)" />
       <item itemvalue="Python.JoojTeco" />
+      <item itemvalue="Python.testes (meu deus que saudade)" />
     </list>
     <recent_temporary>
       <list>
