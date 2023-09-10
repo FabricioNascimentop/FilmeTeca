@@ -89,6 +89,7 @@ div#quadro_cadastro{
     border-radius: 5px;
     background-color: white;
     box-shadow: 16px 19px 12px 0px rgba(0, 0, 0, 0.75);
+    flex-direction: column;
 }
 div#quadro_cadastro > form{
     width: 400px;

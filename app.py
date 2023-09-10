@@ -18,8 +18,7 @@ class filmes(db.Model):
     diretor = db.Column(db.String(60),nullable=False)
     ano = db.Column(db.Integer)
 
-    def __repr__(self):
-        return '<Name %r>' % self.name
+
 
 
 @app.route('/inicio')
@@ -58,7 +57,40 @@ def catalogar():
 @app.route('/cadastro')
 def cadastrar():
         return render_template('cadastro_filme.html')
+
+
+@app.route('/editar/<string:nome>')
+def editar(nome):
+    filminho = filmes.query.filter_by(nome=nome).first()
+    return render_template('editar.html',editFilme=filminho)
+
+
+@app.route('/atualizar',methods=['POST',])
+def atualizar():
+    filme_att = request.form.get('filme_att')
+    film = filmes.query.filter_by(nome=filme_att).first()
     
+    if request.form.get('nome_cadastro_edit') != '':
+        film.nome = request.form.get('nome_cadastro_edit')
+    else:
+        redirect('/atualizar')
+    film.gênero = request.form.get('genero_cadastro_edit')
+    film.diretor = request.form.get('diretor_cadastro_edit')
+    film.ano = request.form.get('ano_cadastro_edit')
+
+    db.session.add(film)
+    db.session.commit()
+
+
+    return redirect('/inicio')
+
+@app.route('/deletar',methods=['POST',])
+def deletar():
+    filme_del = request.form.get('filme_del')
+    filmes.query.filter_by(nome=filme_del).delete()
+    db.session.commit()
+
+    return redirect('/inicio')
 
 #garante que o "app.run" só será rodado se aberta neste arquivo
 if __name__ == "__main__":

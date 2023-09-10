@@ -18,7 +18,7 @@
         <li id="diretor"class="lindex"><span class="cu">{{item.diretor}}</span></li>
         <li id="ano" class="lindex"><span class="cu">{{item.ano}}</span></li>
         <div id="vertical">
-                <a href="/editar" id="editar">editar</a>
+                <a href="{{url_for('editar', nome=item.nome)}}" id="editar">editar</a>
         </div>
     </div>
     {%endfor%}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/style.css">
+  <title>Cadastro_filme</title>
+</head>
+<h1 id="titulo_cadastro">Editar filme</h1>
+<div id="quadro_cadastro">
+<form action="/atualizar" method="post">
+
+    
+    <label for="filme" class="cadastro">Nome:</label>
+    <br>
+    <input type="text" name="nome_cadastro_edit" id="filme" class="cadastro" value="{{editFilme.nome}}">
+    <br>
+    <label for="genero" class="cadastro">Gênero:</label>
+    <br>
+    <input type="text" name="genero_cadastro_edit" id="genero" class="cadastro" value="{{editFilme.gênero}}">
+    <br>
+    <label for="diretor" class="cadastro">Diretor:</label>
+    <br>
+    <input type="text" name="diretor_cadastro_edit" id="diretor" class="cadastro" value="{{editFilme.diretor}}">
+    <br>
+    <label for="ano" class="cadastro">Ano:</label>
+    <br>
+    <input type="text" name="ano_cadastro_edit" id="ano" class="cadastro" value="{{editFilme.ano}}">
+    <br>
+    <button type="submit">Salvar</button>
+    
+    <input type="hidden" name="filme_att" value="{{editFilme.nome}}">
+    
+  </form>
+  <form action="/deletar" method="post">
+    <button type="submit">Excluir filme</button>
+    <input type="hidden" name="filme_del" value="{{editFilme.nome}}">
+  </form>
+</div>
+</body>
+</html>
